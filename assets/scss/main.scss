@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  h1, h2 {
+    @apply text-2xl font-bold;
+  }
+
+  input[type="text"] {
+    @apply border rounded px-2 py-1 border-slate-400 outline-none mb-4;
+  }
+
+  button {
+    @apply bg-teal-600 px-4 py-2 rounded text-white font-bold;
+  }
+}
