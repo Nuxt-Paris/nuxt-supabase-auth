@@ -32,6 +32,7 @@ const sendEmail = async () => {
 </script>
 
 <template>
+  <div>Generated at : {{ new Date().toString() }}</div>
   <div
     class="
       container

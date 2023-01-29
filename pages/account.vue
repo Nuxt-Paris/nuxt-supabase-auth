@@ -1,4 +1,5 @@
 <template>
+    <div>Generated at : {{ new Date().toString() }}</div>
     <form class="form-widget" @submit.prevent="updateProfile">
       <div>
         <label for="email">Email</label>
