@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   modules: ["@nuxtjs/supabase", "@nuxtjs/tailwindcss"],
   tailwindcss: {},
   routeRules: {
-    '/signup': { static: true },
+    '/signup': { swr: 30 },
     '/account': { ssr: true },
     '/**': { swr: true },
   }
