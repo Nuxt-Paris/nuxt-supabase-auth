@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   tailwindcss: {},
   routeRules: {
     '/about': { static: true },
-    '/list': { static: true },
+    '/list': { swr: 120 },
 
   }
 });
