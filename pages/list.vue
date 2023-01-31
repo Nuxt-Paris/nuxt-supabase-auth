@@ -9,7 +9,6 @@ let { data: members, error } = await client.from("profiles").select("*");
   <div>List :</div>
   <div>Generated at : {{ new Date().toString() }}</div>
   <div class="container mx-auto">
-    <header>Je suis connecté en tant que {{ user.email }}</header>
     <main class="my-2">
       <div>Generated at : {{ Date.now().toString() }}</div>
       <h2 class="mb-2">Liste des membres</h2>
