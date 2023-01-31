@@ -3,9 +3,9 @@ export default defineNuxtConfig({
   css: ["@/assets/scss/main.scss"],
   modules: ["@nuxtjs/supabase", "@nuxtjs/tailwindcss"],
   tailwindcss: {},
-  routeRules: {
-    '/signup': { swr: 30 },
-    '/account': { ssr: true },
-    '/**': { swr: true },
-  }
+  // routeRules: {
+  //   '/signup': { swr: true },
+  //   '/account': { ssr: true },
+  //   '/**': { swr: true },
+  // }
 });
