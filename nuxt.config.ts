@@ -4,6 +4,8 @@ export default defineNuxtConfig({
   modules: ["@nuxtjs/supabase", "@nuxtjs/tailwindcss"],
   tailwindcss: {},
   routeRules: {
-    '/about': { static: true }
+    '/about': { static: true },
+    '/list': { swr: 120 },
+
   }
 });
