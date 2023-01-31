@@ -3,7 +3,7 @@ const user = useSupabaseUser();
 </script>
 
 <template>
-  <div>user</div>
+  <div>user : {{ user }}</div>
   <div>
     <Signup />
   </div>
