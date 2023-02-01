@@ -40,9 +40,6 @@ const sendEmail = async () => {
 </script>
 
 <template>
-
-  <!-- TODO: set as a layout -->
-  <Navigation />
   <div class="
       container
       mx-auto
@@ -79,7 +76,8 @@ const sendEmail = async () => {
         Pour vous incrire, ajoutez votre e-mail et vous recevrez un lien
         magique.
       </p>
-      <input v-model="state.email" type="text" placeholder="email" />
+      
+      <input v-model="state.email" class="text-black" type="text" placeholder="email" />
       <div v-if="state.error" class="
           bg-red-500/50
           border border-red-500

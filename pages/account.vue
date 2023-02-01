@@ -7,8 +7,6 @@ const user = useSupabaseUser();
 </script>
 
 <template>
-    <!-- TODO: set as a layout -->
-    <Navigation/>
-    <div>Mes informations personelles :</div>
+    <h1 class="my-6 text-4xl">Paramètres du compte</h1>
     <pre>{{ user }}</pre>
 </template>
