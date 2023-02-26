@@ -33,5 +33,5 @@ const { data: profiles } = await useAsyncData('profiles', async () => {
     </div>
       <div v-if="user">Bienvenue {{ user.email }}</div>
       <h2 class="mb-2">Liste des membres</h2>
-      <div v-for="(item, index) in profiles" :key="index">{{ item }}</div>
+      <div v-for="(profile, index) in profiles" :key="index">{{ profile }}</div>
 </template>
